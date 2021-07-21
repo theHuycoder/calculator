@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background);
+}
+
+.calculator-container {
+    width: 420px;
+    margin: 5rem auto;
+}
+.screen-container {
+    background-color: var(--screen-background);
+    min-height: 6rem;
+}
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    color: var(--white);
+}
+.keypad-container {
+    background-color: var(--toggle-background);
+    min-height: auto;
+}
+
+#keys-container {
+    padding: 2rem;
+    text-align: center;
+}
+.key-style {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.normal-key {
+    background-color: var(--key-bg-toggle-normal);
+    color: var(--text);
+    box-shadow: inset -3px -5px 0 var(--key-shadow-normal);
+}
+.func-key {
+    background-color: var(--key-bg-toggle-func);
+    color: var(--white);
+    box-shadow: inset -3px -5px 0 var(--key-shadow-func);
+}
+.equal-key {
+    background-color: var(--key-bg-toggle-equal);
+    color: var(--white);
+    box-shadow: inset -3px -5px 0 var(--key-shadow-equal);
+}
+.click-effect {
+    top: 2px;
+    left: 2px;
+}
+.is-active {
+    opacity: 0.6;
+}
